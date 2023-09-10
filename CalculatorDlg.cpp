@@ -464,6 +464,6 @@ void CCalculatorDlg::OnBnClickedBtnPercentage()
 	UpdateData();
 	float Percentage = _wtof(m_EditResult);
 	Percentage /=100;
-	m_EditResult.Format(_T("%f"),Percentage);
+	m_EditResult.Format(_T("%0.4f"),Percentage);
 	UpdateData(FALSE);
 }
